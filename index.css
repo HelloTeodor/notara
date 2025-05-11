@@ -11,15 +11,15 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 150%;
     display: grid;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: auto auto;
 }
 
 .containerUp {
     margin: 0;
     padding: 0;
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,7 +35,7 @@ html, body {
     letter-spacing: 2px;
  }
  h2{
-    margin: 100px 0 0 0;
+    margin: 100px 0 300px 0;
     font-size: 3rem;
     width: 330px;
     color: rgb(242, 242, 242);
@@ -55,11 +55,103 @@ html, body {
 .containerDown {
     display: flex;
     flex-direction: column;
-    width: 100%;
     align-items: center;
-    justify-content: start;
-    color: rgb(242, 242, 242);
+    color: aliceblue;
+}
+
+.name {
+    width: 340px;
+    height: 30px;
+    padding: 0 5px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid rgb(242, 242, 242);
     background-color: rgb(18, 18, 18);
+}
+.email {
+    width: 340px;
+    height: 30px;
+    padding: 0 5px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid rgb(242, 242, 242);
+    background-color: rgb(18, 18, 18);
+}
+.message {
+    width: 340.5px;
+    height: 60px;
+    padding: 0 5px;
+    margin: 10px 0 20px 0;
+    resize: none;
+    border-radius: 5px;
+    border: 1px solid rgb(242, 242, 242);
+    background-color: rgb(18, 18, 18);
+}
+.name::placeholder {
+    font-size: 1rem;
+}
+.email::placeholder {
+    font-size: 1rem;
+}
+.message::placeholder {
+    font-size: 1rem;
+}
+
+button {
+    width: 345px;
+    height: 50px;
+    padding: 0 5px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(242, 242, 242);
+    color: rgb(18, 18, 18);;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.checkContainer {
+    width: 350px;
+    display: flex;
+    align-items: center;
+}
+
+.sign {
+    padding-left: 7px;
+}
+
+input[type="checkbox"] {
+    appearance: none;              
+    -webkit-appearance: none;      
+    width: 16px;
+    height: 16px;
+    background-color: rgb(18, 18, 18);      
+    border: 1px solid rgb(242, 242, 242);
+    cursor: pointer;
+    border-radius: 2px;
+  }
+
+  input[type="checkbox"]:checked::after {
+    content: "✔";
+    display: block;
+    text-align: center;
+    color: rgb(242, 242, 242);
+    font-size: 12px;
+  }
+
+  .policy {
+    width: 80%;
+    text-align: center;
+    margin: 100px 0 10px 0;
+    font-size: 0.8rem;
+    color: rgb(182, 182, 182);
+}
+.copyright {
+    margin: 0 0 20px 0;
+    width: 80%;
+    text-align: center;
+    font-size: 0.8rem;
+    color: rgb(182, 182, 182);
 }
 
 h3 {
@@ -80,73 +172,3 @@ h3 {
     font-size: 1.2rem;
 }
 
-.name, .email, .message {
-    min-width: 340px;
-    height: 120px;
-    margin: 15px 0;
-    font-size: 1rem;
-    border-radius: 3px;
-    border: 1.5px solid rgb(242, 242, 242);
-    background-color: rgb(18, 18, 18);
-    padding-left: 5px;
-    box-sizing: border-box;
-}
-
-input::placeholder {
-    font-size: 1rem;
-}
-
-.checkContainer {
-    display: flex;
-    align-items: center;
-}
-
-.sign {
-    margin-left: 5px;
-    color: rgb(242, 242, 242);;
-}
-
-input[type="checkbox"] {
-    appearance: none;              /* for modern browsers */
-    -webkit-appearance: none;      /* for Safari */
-    width: 16px;
-    height: 16px;
-    background-color: black;       /* now works */
-    border: 1px solid rgb(242, 242, 242);
-    cursor: pointer;
-    border-radius: 2px;
-  }
-
-  input[type="checkbox"]:checked::after {
-    content: "✔";
-    display: block;
-    text-align: center;
-    color: rgb(242, 242, 242);
-    font-size: 12px;
-  }
-
-button {
-    margin: 10px 0;
-    min-width: 340px;
-    height: 130px;
-    font-size: large;
-    font-weight: bold;
-    border-radius: 3px;
-    border: none;
-    background-color: rgb(242, 242, 242);
-}
-
-.policy {
-    width: 80%;
-    text-align: center;
-    margin: 100px 0 10px 0;
-    font-size: 0.8rem;
-    color: rgb(182, 182, 182);
-}
-.copyright {
-    margin: 0 0 20px 0;
-    width: 80%;
-    text-align: center;
-    font-size: 0.8rem;
-    color: rgb(182, 182, 182);
-}
