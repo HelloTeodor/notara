@@ -79,7 +79,7 @@ html, body {
 }
 .message {
     width: 340.5px;
-    height: 60px;
+    height: 100px;
     padding: 0 5px;
     margin: 10px 0 20px 0;
     resize: none;
